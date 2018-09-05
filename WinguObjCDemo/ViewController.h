@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WinguObjCDemo-Swift.h"
 
 @interface ViewController : UIViewController
 
+@property WinguLocationsHelper *location;
 
 @end
 
