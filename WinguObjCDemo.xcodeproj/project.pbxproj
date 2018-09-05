@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD7F8E7F213FFBCD0039BD4D /* winguSDKContent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7F8E7D213FFBC40039BD4D /* winguSDKContent.framework */; };
+		DD7F8E80213FFBCD0039BD4D /* winguSDKContent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD7F8E7D213FFBC40039BD4D /* winguSDKContent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD7F8E82213FFC440039BD4D /* WinguGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7F8E81213FFC440039BD4D /* WinguGallery.framework */; };
+		DD7F8E83213FFC440039BD4D /* WinguGallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD7F8E81213FFC440039BD4D /* WinguGallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD8777B3213FEF8000742F21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8777B2213FEF8000742F21 /* AppDelegate.m */; };
 		DD8777B6213FEF8000742F21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8777B5213FEF8000742F21 /* ViewController.m */; };
 		DD8777B9213FEF8000742F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8777B7213FEF8000742F21 /* Main.storyboard */; };
@@ -25,6 +29,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DD7F8E83213FFC440039BD4D /* WinguGallery.framework in Embed Frameworks */,
+				DD7F8E80213FFBCD0039BD4D /* winguSDKContent.framework in Embed Frameworks */,
 				DD8777CA213FF35200742F21 /* winguSDKEssential.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -33,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DD7F8E7D213FFBC40039BD4D /* winguSDKContent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = winguSDKContent.framework; path = Carthage/Build/iOS/winguSDKContent.framework; sourceTree = "<group>"; };
+		DD7F8E81213FFC440039BD4D /* WinguGallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WinguGallery.framework; path = Carthage/Build/iOS/WinguGallery.framework; sourceTree = "<group>"; };
 		DD8777AE213FEF8000742F21 /* WinguObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WinguObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8777B1213FEF8000742F21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD8777B2213FEF8000742F21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7F8E82213FFC440039BD4D /* WinguGallery.framework in Frameworks */,
+				DD7F8E7F213FFBCD0039BD4D /* winguSDKContent.framework in Frameworks */,
 				DD8777C9213FF35200742F21 /* winguSDKEssential.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +73,8 @@
 		DD8777A5213FEF8000742F21 = {
 			isa = PBXGroup;
 			children = (
+				DD7F8E81213FFC440039BD4D /* WinguGallery.framework */,
+				DD7F8E7D213FFBC40039BD4D /* winguSDKContent.framework */,
 				DD8777C8213FF35200742F21 /* winguSDKEssential.framework */,
 				DD8777B0213FEF8000742F21 /* WinguObjCDemo */,
 				DD8777AF213FEF8000742F21 /* Products */,
@@ -171,10 +183,14 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/winguSDKEssential.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/winguSDKContent.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/WinguGallery.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/winguSDKEssential.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/winguSDKContent.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WinguGallery.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

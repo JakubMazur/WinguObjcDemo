@@ -1,0 +1,3 @@
+binary "https://raw.githubusercontent.com/wingu-GmbH/wingu-ios-sdk-content/master/wingu-ios-sdk-content.json" "0.2.4"
+binary "https://raw.githubusercontent.com/wingu-GmbH/wingu-ios-sdk-essentials/master/wingu-ios-sdk-essentials.json" "0.4.5"
+github "wingu-GmbH/WinguGallery" "0.1.11"
